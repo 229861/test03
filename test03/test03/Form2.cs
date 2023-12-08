@@ -46,6 +46,7 @@ namespace test03
         public Form2()
         {
             InitializeComponent();
+            updatedCards();
         }
 
         private void Form2_Load(object sender, EventArgs e)
