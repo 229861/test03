@@ -50,7 +50,19 @@ namespace test03
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            updatedCards();
+        }
+        private void updatedCards()
+        {
+            Random random = new Random();
 
+            for (int i = 0; i < 42; i++)
+            {
+                int random_number = random.Next(0, 21);
+                int temp = index[i];
+                index[i] = index[random_number];
+                index[random_number] = temp;
+            }
         }
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
