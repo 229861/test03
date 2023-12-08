@@ -12,6 +12,29 @@ namespace test03
 {
     public partial class Form2 : Form
     {
+        Image[] card = {
+            Properties.Resources.apple,
+            Properties.Resources.avocado,
+            Properties.Resources.banana,
+            Properties.Resources.blueberry,
+            Properties.Resources.cherry,
+            Properties.Resources.gold_kiwi,
+            Properties.Resources.grape_fruit,
+            Properties.Resources.grape,
+            Properties.Resources.lemon,
+            Properties.Resources.mandarin,
+            Properties.Resources.mango,
+            Properties.Resources.orange,
+            Properties.Resources.oriental_melon,
+            Properties.Resources.peach,
+            Properties.Resources.pear,
+            Properties.Resources.pineapple,
+            Properties.Resources.plum,
+            Properties.Resources.pomegranate,
+            Properties.Resources.strawberry,
+            Properties.Resources.tomato,
+            Properties.Resources.watermelon,
+        };
         public Form2()
         {
             InitializeComponent();
