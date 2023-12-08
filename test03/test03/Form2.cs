@@ -118,7 +118,11 @@ namespace test03
                     found++;
                     firstCard.Visible = false;
                     card_button.Visible = false; 
-                   
+                    if (found == 2)
+                    {
+                        MessageBox.Show("축하합니다!", "시행횟수 : " + movement);
+                        tableLayoutPanel1.Enabled = false;
+                    }
 
                 }
                 card_button.Enabled = true; 
