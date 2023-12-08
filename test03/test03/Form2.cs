@@ -93,6 +93,15 @@ namespace test03
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Button card_button = (Button)sender;
+
+            card_button.Enabled = false;
+            int ButtonNumber = int.Parse(card_button.Name.Substring(6));
+            int indexNumber = index[ButtonNumber - 1];
+            card_button.BackgroundImage = card[indexNumber];
+            card_button.Refresh();
+
+           
 
         }
 
