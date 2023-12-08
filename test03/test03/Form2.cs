@@ -109,7 +109,13 @@ namespace test03
 
             }
 
-            
+            else
+            {
+                firstCard.BackgroundImage = null;
+                card_button.BackgroundImage = null;
+               
+            }
+
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
