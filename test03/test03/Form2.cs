@@ -75,6 +75,19 @@ namespace test03
                 Application.Exit();
             }
 
+            found = 0;
+            movement = 0;
+
+            foreach (Control control in tableLayoutPanel1.Controls)
+            {
+                if (control is Button button)
+                {
+                    button.Visible = true;
+
+                }
+            }
+            updatedCards();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
