@@ -101,8 +101,15 @@ namespace test03
             card_button.BackgroundImage = card[indexNumber];
             card_button.Refresh();
 
-           
+            if (firstCard == null)
+            {
+                firstCard = card_button;
+                firstIndex = indexNumber;
+                movement++;
 
+            }
+
+            
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
